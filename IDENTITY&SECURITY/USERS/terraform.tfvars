@@ -1,0 +1,5 @@
+user_ocid="ocid1.user.oc1..aaaaaaaah42yzbrzzyffky6xdfeiyjy6w6dpuyft5zh5w4rlw74urvo3rf2q"
+fingerprint="5c:8c:93:15:9e:04:fe:b5:e7:22:91:b0:62:be:09:ee"
+tenancy_ocid="ocid1.tenancy.oc1..aaaaaaaamw5lkqltj3judgmowuvagmwccwfd3b2xbl5bwjpdkkyhfrmmxl5a"
+region="ap-hyderabad-1"
+private_key_path = "/home/opc/.oci/arul-pvt-key.pem"
