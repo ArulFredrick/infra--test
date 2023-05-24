@@ -1,12 +1,8 @@
-
-
 terraform {
-    required_providers {
-      oci = {
-        source = "hashicorp/oci"
-      }
-    }
+  backend "http" {
+    update_method = "PUT"
   }
+}
 provider "oci" {
   region           = var.region
   tenancy_ocid     = var.tenancy_ocid
@@ -136,6 +132,16 @@ resource "oci_core_default_security_list" "default_security_list" {
     tcp_options {
       min = 22
       max = 22
+    }
+  }
+  ingress_security_rules {
+    protocol  = "6" // tcp
+    source    = "0.0.0.0/0"
+    stateless = false
+
+    tcp_options {
+      min = 80
+      max = 80
     }
   }
 
